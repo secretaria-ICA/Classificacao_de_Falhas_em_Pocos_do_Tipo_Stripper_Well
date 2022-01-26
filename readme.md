@@ -24,15 +24,15 @@ O foco deste trabalho é de identificar a ferramenta de Inteligencia Artificial 
 
 ### Abstract 
 
-The Stripper Wells, despite of being the ones near to the end of its economics life, still are responsible for a considerable portion of EUA' Oil and Gas production. Due to its low individual production capacity, the maintenance expenses must be planned to optimize the profits. 
+*The Stripper Wells, despite of being the ones near to the end of its economics life, still are responsible for a considerable portion of EUA' Oil and Gas production. Due to its low individual production capacity, the maintenance expenses must be planned to optimize the profits. *
 
-The main objectiv of this work is to identify an Artificial Integilence tool that classifies a new failure event between "surface" and "downhole", based on a training with previous failures data base. To classify new events allows the company to proper plan the workover/intervation and the resources needed.  
+*The main objectiv of this work is to identify an Artificial Integilence tool that classifies a new failure event between "surface" and "downhole", based on a training with previous failures data base. To classify new events allows the company to proper plan the workover/intervation and the resources needed.*  
 
 ### 1. Introdução
 
 Os poços denominados "Stripper Well" são aqueles de superfície, que possuem produção entre 1-15bbl/d de Óleo, ou equivalente de Gás. 
 
-De acordo com a NSWA (National Stripper Well Association), este tipo de poço foi responsável por aproximadamente 11,3% da produção de Óleo, e 8,3% da produção de Gás dos EUA em 2017, quando existiam em torno de 770 000 poços operacionais ao redor do país.  
+De acordo com a NSWA (*National Stripper Well Association*), este tipo de poço foi responsável por aproximadamente 11,3% da produção de Óleo, e 8,3% da produção de Gás dos EUA em 2017, quando existiam em torno de 770 000 poços operacionais ao redor do país.  
 
 Este trabalho foi baseado em um desafio liberado no site Kaggle, onde tem-se por objetivo identificar um método de classificação de tipo de falha de poços do tipo "stripper well", entre "surface" (superfície) e "downhole" (fundo). 
 
@@ -59,8 +59,6 @@ Após os treinamentos, os modelos foram aplicados sobre as bases de teste, e os 
 
 Para cada método, e configuração de um mesmo método, foram salvos os resultados da métrica de validação (*precision*, *recall*, *fscore*). Adicionalmente, foram salvas as Árvores de Decisão para os métidos *Random Forest* (somente a primeira árvore) e *Decision Tree*, e para as redes MLP foram salvos os gráficos de Acurária e Perda de treino/validação de treino, e o gráfico de perda somente da validação, para observação mais detalhada dos comportamentos. Outro parâmetro que foi anotado foi o tempo de treinamento das bases, pois trata-se de uma informação relevante no processo de decisão do modelo/método ideal.
 
-### 4. Conclusões
-
 |**Teste**|**_Presicion_**|**_Recall_**|**_fscore_**|**Tempo de Treino**|
 |---|---|---|---|---|
 |*Random Forest* Normalizado|0.9998870439399073|0.9932885906040269|0.9965651372113189|18,74s|
@@ -80,6 +78,10 @@ Para cada método, e configuração de um mesmo método, foram salvos os resulta
 |MLP 11|0.9917222222222222|0.5|0.4958265643381323|75s (22 épocas)|
 |MLP 12|0.9917222222222222|0.5|0.4958265643381323|99s (29 épocas)|
 |MLP 13|0.9917222222222222|0.5|0.4958265643381323|52s (19 épocas)|
+
+Os arquivos criados por cada modelo foram salvos e anexados a este repositório Git, assim como os arquivos de labels para comparação. No cado da *Random Forest* e *Decision Tree*, também foram salvas a primeira árvore e a árvore final, respectivamente. Já para as redes MLP, foram salvos os gráficos de *Accuracy* e *Loss* de treino, e *Validation_Accuracy*, para anáise e observação do desempenho de cada configuração testada das redes. 
+
+### 4. Conclusões
 
 Pode-se concluir que, apesar da rede *Multi-Layer Perceptron* ser uma ferramenta de inteligência artificial bastante robusta para tratamento de dados em grande volume e complexidade, para o problema apresentado, os métodos de aprendizado *Random Forest* e *Decision Tree* apresentaram performance superior tanto em velocidade de treino, quanto em capacidade de predizer a classe dos eventos de falha.
 
