@@ -81,7 +81,7 @@ Para cada método, e configuração de um mesmo método, foram salvos os resulta
 |MLP 12|0.9917222222222222|0.5|0.4958265643381323|99s (29 épocas)|
 |MLP 13|0.9917222222222222|0.5|0.4958265643381323|52s (19 épocas)|
 
-Pode-se concluir que, apesar das redes *Multi-Layer Perceptron* ser uma ferramenta de inteligência artificial bastante robusta para tratamento de dados em grande volume e complexidade, para o problema apresentado, os métodos de aprendizado *Random Forest* e *Decision Tree* apresentaram performance superior tanto em velocidade de treino, quanto em capacidade de predizer a classe dos eventos de falha.
+Pode-se concluir que, apesar da rede *Multi-Layer Perceptron* ser uma ferramenta de inteligência artificial bastante robusta para tratamento de dados em grande volume e complexidade, para o problema apresentado, os métodos de aprendizado *Random Forest* e *Decision Tree* apresentaram performance superior tanto em velocidade de treino, quanto em capacidade de predizer a classe dos eventos de falha.
 
 Dentre os dois métodos mais eficazes, o *Decision Tree* foi o que sobressaiu, devido ao tempo necessário para treino do modelo. Observou-se também que, para este método, a normalização não influenciou no resultado final de forma expressiva, tendo alcançado o mesmo resultado com 0,07s a mais de tempo de treino, o que é imperceptível.
 
