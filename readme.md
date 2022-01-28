@@ -1,17 +1,13 @@
-<!-- antes de enviar a versão final, solicitamos que todos os comentários, colocados para orientação ao aluno, sejam removidos do arquivo -->
 # Classificação de Falhas em poços do tipo "Stripper Well".
 
 #### Aluno: [Richard Peters](https://github.com/richpe87/TCC_MasterBI)
-#### Orientador: [Felipe Borges](https://github.com/link_do_github)
+#### Orientador: [Felipe Borges]
 
 ---
 
 Trabalho apresentado ao curso [BI MASTER](https://ica.puc-rio.ai/bi-master) como pré-requisito para conclusão de curso e obtenção de crédito na disciplina "Projetos de Sistemas Inteligentes de Apoio à Decisão".
 
-<!-- para os links a seguir, caso os arquivos estejam no mesmo repositório que este README, não há necessidade de incluir o link completo: basta incluir o nome do arquivo, com extensão, que o GitHub completa o link corretamente -->
-- [Link para o código](https://github.com/link_do_repositorio). <!-- caso não aplicável, remover esta linha -->
-
-- [Link para a monografia](https://link_da_monografia.com). <!-- caso não aplicável, remover esta linha -->
+- [Link para o código](https://github.com/richpe87/TCC_MasterBI). 
 
 ---
 
@@ -61,23 +57,13 @@ Para cada método, e configuração de um mesmo método, foram salvos os resulta
 
 |**Teste**|**_Presicion_**|**_Recall_**|**_fscore_**|**Tempo de Treino**|
 |---|---|---|---|---|
-|*Random Forest* Normalizado|0.9998870439399073|0.9932885906040269|0.9965651372113189|18,74s|
-|*Random Forest* Não Normalizado|1|1|1|35,39s|
-|*Decision Tree* Normalizado|1|1|1|1,06s|
-|*Decision Tree* Não Normalizado|1|1|1|0,99s|
-|MLP 1|0.9917222222222222|0.5|0.4958265643381323|57s (18 épocas)|
-|MLP 2|0.9917222222222222|0.5|0.4958265643381323|104s (33 épocas)|
-|MLP 3|0.9917222222222222|0.5|0.4958265643381323|41s (12 épocas)|
-|MLP 4|0.9917222222222222|0.5|0.4958265643381323|55s (20 épocas)|
-|MLP 5|0.9917222222222222|0.5|0.4958265643381323|75s (24 épocas)|
-|MLP 6|0.9917222222222222|0.5|0.4958265643381323|69s (27 épocas)|
-|MLP 7|0.9917222222222222|0.5|0.4958265643381323|50s (16 épocas)|
-|MLP 8|0.9917222222222222|0.5|0.4958265643381323|69s (19 épocas)|
-|MLP 9|0.9917222222222222|0.5|0.4958265643381323|75s (20 épocas)|
-|MLP 10|0.9917222222222222|0.5|0.4958265643381323|83s (23 épocas)|
-|MLP 11|0.9917222222222222|0.5|0.4958265643381323|75s (22 épocas)|
-|MLP 12|0.9917222222222222|0.5|0.4958265643381323|99s (29 épocas)|
-|MLP 13|0.9917222222222222|0.5|0.4958265643381323|52s (19 épocas)|
+|*Random Forest* Normalizado|99,99%|99,33%|99,66%|18,74s|
+|*Random Forest* Não Normalizado|100%|100%|100%|35,39s|
+|*Decision Tree* Normalizado|100%|100%|100%|1,06s|
+|*Decision Tree* Não Normalizado|100%|100%|100%|0,99s|
+|MLP*|99,17%|50%|49,58%|41s (12 épocas)|
+
+Nota: Foram testadas diversas configurações para rede MLP, porém as métricas obtidas foram praticametne iguais, variando ligeiramente nas curvas de _Val-Loss_, e em tempo de treino.
 
 Os arquivos criados por cada modelo foram salvos e anexados a este repositório Git, assim como os arquivos de labels para comparação. No cado da *Random Forest* e *Decision Tree*, também foram salvas a primeira árvore e a árvore final, respectivamente. Já para as redes MLP, foram salvos os gráficos de *Accuracy* e *Loss* de treino, e *Validation_Accuracy*, para anáise e observação do desempenho de cada configuração testada das redes. 
 
