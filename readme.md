@@ -1,7 +1,7 @@
 # Classificação de Falhas em poços do tipo "Stripper Well".
 
 #### Aluno: [Richard Peters](https://github.com/richpe87/TCC_MasterBI)
-#### Orientador: [Felipe Borges]
+#### Orientador: [Felipe Borges](https://github.com/FelipeBorgesC)
 
 ---
 
@@ -20,7 +20,7 @@ O foco deste trabalho é de identificar a ferramenta de Inteligencia Artificial 
 
 ### Abstract 
 
-*The Stripper Wells, despite of being the ones near to the end of its economics life, still are responsible for a considerable portion of EUA' Oil and Gas production. Due to its low individual production capacity, the maintenance expenses must be planned to optimize the profits. *
+*The Stripper Wells, despite of being the ones near to the end of its economics life, still are responsible for a considerable portion of EUA' Oil and Gas production. Due to its low individual production capacity, the maintenance expenses must be planned to optimize the profits.*
 
 *The main objectiv of this work is to identify an Artificial Integilence tool that classifies a new failure event between "surface" and "downhole", based on a training with previous failures data base. To classify new events allows the company to proper plan the workover/intervation and the resources needed.*  
 
