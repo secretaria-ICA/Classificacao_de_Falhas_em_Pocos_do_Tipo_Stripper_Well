@@ -1,6 +1,6 @@
 # Classificação de Falhas em poços do tipo "Stripper Well".
 
-#### Aluno: [Richard Peters](https://github.com/richpe87/TCC_MasterBI)
+#### Aluno: [Richard Peters](https://github.com/richpe87)
 #### Orientador: [Felipe Borges](https://github.com/FelipeBorgesC)
 
 ---
