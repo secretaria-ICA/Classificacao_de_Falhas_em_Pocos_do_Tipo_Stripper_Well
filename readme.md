@@ -1,4 +1,4 @@
-# Classificação de Falhas em poços do tipo "Stripper Well".
+# Classificação_de_Falhas_em_Poços_do-Tipo_Stripper_Well
 
 #### Aluno: [Richard Peters](https://github.com/richpe87)
 #### Orientador: [Felipe Borges](https://github.com/FelipeBorgesC)
